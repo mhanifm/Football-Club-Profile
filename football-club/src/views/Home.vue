@@ -1,26 +1,26 @@
 <template>
-  <div class="container">
-    <!-- <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div class="row">
-      <div class="col-2 mb-3"
-        v-for="area in areas" :key="area.id">
-        <div class="btn btn-outline-infobtn btn-secondary mx-auto d-block w-100 rounded shadow">{{ area.name }}</div>
-      </div>
+  <div class="container-area">
+    <div class="row d-flex justify-content-center"
+      v-if="areas.length">
+      <Area class="col-2 mr-3 ml-3 mb-3"
+        v-for="area in areas" :key="area.id" :area="area">
+      </Area>
+    </div>
+    <div v-else>
+      Loading ...
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 import footBallApi from '../apis/footballApi'
+import Area from '../components/Area.vue'
 
 export default {
   name: 'Home',
-  // components: {
-  //   HelloWorld
-  // },
+  components: {
+    Area
+  },
   data () {
     return {
       areas: []
@@ -30,7 +30,6 @@ export default {
     async fetchFootBallAreas () {
       try {
         const footBallAreas = await footBallApi.get('/areas')
-        console.log(footBallAreas.data.areas)
         this.areas = footBallAreas.data.areas
       } catch (err) {
         console.log(err)
@@ -42,3 +41,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .container-area {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+  }
+</style>
