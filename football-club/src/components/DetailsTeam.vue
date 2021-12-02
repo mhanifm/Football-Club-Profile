@@ -54,7 +54,7 @@
                 <router-link
                   :to="{ name: 'DetailPlayer', params:{ id: player.id }}"
                   class="btn btn-sm btn-info"
-                >Details</router-link>
+                ><i class="fas fa-eye mr-2"></i>Details</router-link>
               </div>
             </td>
           </tr>

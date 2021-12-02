@@ -60,5 +60,8 @@ export default {
 }
 .box h2 {
   text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 40px;
+  font-style: italic;
 }
 </style>

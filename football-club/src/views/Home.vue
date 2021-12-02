@@ -32,6 +32,7 @@ export default {
     padding: 50px;
     background: rgba(255, 255, 255, .4);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 10px;
   }
   .box h2 {
     margin: 0 0 20px;
@@ -39,5 +40,11 @@ export default {
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 40px;
+  }
+  .box p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
   }
 </style>
