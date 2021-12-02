@@ -1,11 +1,11 @@
 <template>
   <div class="card shadow bg-white borders">
-    <img class="card-img-top imgs" :src="team.crestUrl" alt=""/>
+    <img class="card-img-top imgs" :src="team.crestUrl" alt="Broken Image"/>
     <div class="card-body">
-        <h5 class="card-title text-center">{{ team.name }}</h5>
+        <h5 class="card-title text-center fontName">{{ team.name }}</h5>
         <router-link
           :to="{name: 'DetailsTeam', params: {id: team.id}}"
-          class="btn btn-warning mx-80 d-block w-100 rounded shadow">More Info</router-link>
+          class="btn btn-warning mx-80 d-block w-100 rounded shadow fontSize">More Info</router-link>
     </div>
   </div>
 </template>
@@ -24,5 +24,9 @@ export default {
 }
 .borders {
   border-radius: 20px;
+}
+.fontName {
+  font-size: 25px;
+  font-weight: bold;
 }
 </style>

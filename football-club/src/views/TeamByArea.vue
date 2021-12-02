@@ -6,7 +6,7 @@
           class="col-3 ml-2 mr-2 mb-3"
           v-for="team in teams" :key="team.id" :team="team"></ListTeams>
     </div>
-    <div v-else>Team Not Found</div>
+    <div v-else class="text-white">Team Not Found</div>
   </div>
 </template>
 
