@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
     <div class="container-fluid">
-      <a class="navbar-brand fontStyle align-items-center"><b>Football Info</b></a>
+      <a class="navbar-brand fontStyle"><b>Football Info</b></a>
       <div class="d-flex navbar-brand">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-3">
           <li class="nav-item">

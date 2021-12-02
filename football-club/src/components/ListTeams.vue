@@ -5,7 +5,7 @@
         <h5 class="card-title text-center fontName">{{ team.name }}</h5>
         <router-link
           :to="{name: 'DetailsTeam', params: {id: team.id}}"
-          class="btn btn-warning mx-80 d-block w-100 rounded shadow fontSize">More Info</router-link>
+          class="btn btn-warning mx-80 d-block w-100 rounded shadow fontInfo">More Info</router-link>
     </div>
   </div>
 </template>
@@ -28,5 +28,9 @@ export default {
 .fontName {
   font-size: 25px;
   font-weight: bold;
+}
+.fontInfo {
+  font-style: italic;
+  font-weight: 600;
 }
 </style>
